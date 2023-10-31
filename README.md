@@ -22,5 +22,5 @@
 
 Хранятся в файле *application.properties*
 
-+ app.students.init-default -- флаг для предзагрузки списка студентов из файла
-+ app.students.default-list -- путь к файлу, из которого нужно брать список студентов
++ app.students.init-default -- флаг для предзагрузки списка студентов из файла, по умолчанию = true
++ app.students.default-list -- путь к файлу, из которого нужно брать список студентов, по умолчанию = /default-students-list
