@@ -5,11 +5,15 @@
 
 ## Запуск из Docker
 
-Для запуска из Docker выполнить следующие команды:
+Для запуска из Docker нужно собрать проект через Gradle и выполнить в консоли следующие команды:
 
 > docker build -t students .
 
 > docker run -it students
+
+Для переопределения значений application.properties указать в dockerfile в строчке CMD нужные значения, пример:
+
+> "-Dapp.students.init-default=false"
 
 ### Список команд
 
@@ -22,5 +26,5 @@
 
 Хранятся в файле *application.properties*
 
-+ app.students.init-default -- флаг для предзагрузки списка студентов из файла, по умолчанию = true
++ app.students.init-default -- флаг для предзагрузки списка студентов из файла, по умолчанию = true (при сборке образа через dockerfile = false)
 + app.students.default-list -- путь к файлу, из которого нужно брать список студентов, по умолчанию = /default-students-list
