@@ -14,8 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-//@ConditionalOnExpression("${app.students.init-default:true} and " +
-//        "!'${app.students.default-list}'.isEmpty()")
+@ConditionalOnExpression("${app.students.init-default:true} and " +
+        "!'${app.students.default-list}'.isEmpty()")
 @Component
 public class InitStudentsLoader implements StudentsLoader{
     @Value("${app.students.default-list}")
