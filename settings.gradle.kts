@@ -1,2 +1,1 @@
-rootProject.name = "spring-core-example"
-
+rootProject.name = "m3practice"
